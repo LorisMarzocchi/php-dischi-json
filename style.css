@@ -4,19 +4,36 @@
   box-sizing: border-box;
 }
 .logo {
+  height: 100px;
+}
+.logo img {
   height: 50px;
+  width: 50px;
 }
-.mainContainer {
+/* .mainContainer {
   background-color: #1d2d3c !important;
-}
+  height: 100vh;
+} */
 .card {
-  width: calc((100% / 3) - 20px);
-  height: 300px;
+  width: calc((100% / 3) - 60px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 2rem;
 }
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 .card img {
   height: 300px;
+}
+.card2 {
+  /* opacity: 1; */
+  margin: auto;
+  width: 300px;
+  height: 100%;
+}
+.modColor {
+  background-color: #112031;
+  opacity: 0.88;
 }

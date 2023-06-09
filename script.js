@@ -10,7 +10,7 @@ createApp({
     requestData() {
       axios
         .get("http://localhost:8888/php-dischi-json/data.php")
-        .then((response) => (this.arrTodo = response.data));
+        .then((response) => (this.arrDischi = response.data));
     },
   },
   created() {
