@@ -6,5 +6,14 @@ createApp({
       arrDischi: [],
     };
   },
-  methods: {},
+  methods: {
+    requestData() {
+      axios
+        .get("http://localhost:8888/php-dischi-json/data.php")
+        .then((response) => (this.arrTodo = response.data));
+    },
+  },
+  created() {
+    this.requestData();
+  },
 }).mount("#app");

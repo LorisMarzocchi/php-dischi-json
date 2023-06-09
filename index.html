@@ -19,7 +19,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="logo bg-black"></div>
+      <div class="mainContainer vh-100">
+        <div class="container pt-5">
+          <div
+            class="card mb-3 text-center"
+            v-for="(item, index) in arrDischi"
+            :key="item.photo"
+          >
+            <img :src="item.photo" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">{{item.album}}</h5>
+              <p class="card-text">{{item.name}}</p>
+              <p class="card-text">{{item.year}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
