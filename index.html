@@ -31,7 +31,7 @@
             :key="item.photo"
           >
             <img :src="item.photo" class="card-img-top" alt="..." />
-            <div class="card-body">
+            <div class="card-body mt-2">
               <h5 class="card-title text-light fw-bold">{{item.album}}</h5>
               <p class="card-text mt-3 text-light">{{item.name}}</p>
               <p class="card-text text-light fs-4 fw-bold">{{item.year}}</p>
@@ -46,7 +46,7 @@
 
             <!-- Modal -->
             <div
-              class="modal fade modal-fullscreen modColor"
+              class="modal fade modal-fullscreen"
               :id="'staticBackdrop-' + index"
               data-bs-backdrop="static"
               data-bs-keyboard="false"
@@ -54,8 +54,11 @@
               aria-labelledby="staticBackdropLabel"
               aria-hidden="true"
             >
-              <div class="modal-dialog modal-fullscreen modColor">
-                <div class="modal-content" style="background-color: #1d2d3c">
+              <div class="modal-dialog modal-fullscreen">
+                <div
+                  class="modal-content modColor"
+                  style="background-color: #112031"
+                >
                   <div class="modal-header border-0">
                     <button
                       type="button"
@@ -67,7 +70,7 @@
                   <div class="modal-body">
                     <div class="card2 mt-5">
                       <img :src="item.photo" class="card-img-top" alt="..." />
-                      <div class="card-body">
+                      <div class="card-body mt-2">
                         <h5 class="card-title fw-bold text-light">
                           {{item.album}}
                         </h5>
